@@ -171,14 +171,14 @@ INSERT INTO `rooms` (`id`, `room`) VALUES
 
 CREATE TABLE IF NOT EXISTS `services` (
 `id` int(12) NOT NULL,
-  `nome` varchar(64) NOT NULL
+  `name` varchar(64) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Data for table `services`
 --
 
-INSERT INTO `services` (`id`, `nome`) VALUES
+INSERT INTO `services` (`id`, `name`) VALUES
 (1, 'GAPI — Gabinete de Apoio a Projectos'),
 (2, 'Helpdesk'),
 (3, 'Secretaria'),
