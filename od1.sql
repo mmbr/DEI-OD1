@@ -1,10 +1,6 @@
 -- phpMyAdmin SQL Dump
 -- version 4.2.11
 -- http://www.phpmyadmin.net
---
--- Generation Time: 14-Nov-2014 às 17:54
--- Versão do servidor: 5.5.37-0+wheezy1
--- PHP Version: 5.4.4-14+deb7u14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -31,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `rooms` (
 ) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=latin1;
 
 --
--- Data for table `rooms`
+-- Data for the table `rooms`
 --
 
 INSERT INTO `rooms` (`id`, `room`) VALUES
@@ -175,7 +171,7 @@ CREATE TABLE IF NOT EXISTS `services` (
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
--- Data for table `services`
+-- Data for the table `services`
 --
 
 INSERT INTO `services` (`id`, `name`) VALUES
@@ -185,6 +181,91 @@ INSERT INTO `services` (`id`, `name`) VALUES
 (4, 'NEI — Núcleo de Estudantes de Informática'),
 (5, 'Bar CISUC'),
 (6, 'Bar');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for `teachers`
+--
+
+CREATE TABLE IF NOT EXISTS `teachers` (
+`id` int(12) NOT NULL,
+  `name` varchar(64) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=latin1;
+
+--
+-- Data for the table `teachers`
+--
+
+INSERT INTO `teachers` (`id`, `name`) VALUES
+(1, 'Alberto Jorge Lebre Cardoso'),
+(2, 'Alcides Miguel Cachulo Aguiar Fonseca'),
+(3, 'Alexandre Miguel dos Santos Martins Pinto'),
+(4, 'Álvaro Manuel Reis da Rocha'),
+(5, 'Ana Madalena de Sousa Vasconcelos Matos Boavida'),
+(6, 'António Dourado Pereira Correia'),
+(7, 'António Jorge Costa Granjal'),
+(8, 'António Jorge Silva Cardoso'),
+(9, 'António José Nunes Mendes'),
+(10, 'António Manuel Sucena Silveira Gomes'),
+(11, 'Bernardete Martins Ribeiro'),
+(12, 'Bruna Raquel Sousa'),
+(13, 'Bruno Miguel Brás Cabral'),
+(14, 'Carlos Eduardo Delgado Cerqueira'),
+(15, 'Carlos Manuel Mira da Fonseca'),
+(16, 'Carlos Manuel Robalo Lisboa Bento'),
+(17, 'Carlos Nuno Bizarro e Silva Laranjeiro'),
+(18, 'César A. Teixeira'),
+(19, 'David Fonseca Palma'),
+(20, 'Edmundo Heitor Silva Monteiro'),
+(21, 'Eduardo Miguel Morgado Nunes'),
+(22, 'Ernesto Jorge Fernandes Costa'),
+(23, 'Fernando Amílcar Bandeira Cardoso'),
+(24, 'Fernando Jorge Penousal Martins Machado'),
+(25, 'Fernando José Barros Rodrigues Silva'),
+(26, 'Fernando Pedro Lopes Boavida Fernandes'),
+(27, 'Filipe João Boavida Mendonça Machado Araújo'),
+(28, 'Francisco Colunas Pereira Câmara Pereira'),
+(29, 'Henrique Santos Carmo Madeira'),
+(30, 'Hugo Ricardo Gonçalo Oliveira'),
+(31, 'Joel Perdiz Arrais'),
+(32, 'Jorge Manuel Oliveira Henriques'),
+(33, 'Jorge Miguel Sá Silva'),
+(34, 'João Gabriel Monteiro Carvalho e Silva'),
+(35, 'João Manuel Frade Belo Bicker'),
+(36, 'João Paulo da Silva Machado Garcia Vilela'),
+(37, 'João Pedro Morais de Matos Moniz Ramos'),
+(38, 'João Proença Cunha'),
+(39, 'Karen Bennett'),
+(40, 'Licínio Gomes Roque'),
+(41, 'Luís Alexandre Serras Moura e Silva'),
+(42, 'Luís Filipe Santos Coelho Paquete'),
+(43, 'Luís Filipe Vieira Cordeiro'),
+(44, 'Luís Miguel Machado Lopes Macedo'),
+(45, 'Marco Paulo Amorim Vieira'),
+(46, 'Maria José Patrício Marcelino'),
+(47, 'Maria Teresa Ferreira Soares Mendes'),
+(48, 'Marília Pascoal Curado'),
+(49, 'Mário Alberto Costa Zenha Rela'),
+(50, 'Nuno Alexandre Couceiro Pimenta'),
+(51, 'Nuno Miguel Cabral Carreira Coelho'),
+(52, 'Paul David Hardman'),
+(53, 'Paulo Alexandre Ferreira Simões'),
+(54, 'Paulo Fernando Pereira Carvalho'),
+(55, 'Paulo Filipe de Jesus Mesquita'),
+(56, 'Paulo Jorge Sousa Gomes'),
+(57, 'Paulo José Osório Rupino Cunha'),
+(58, 'Pedro José Mendes Martins'),
+(59, 'Pedro Manuel Henriques da Cunha Abreu'),
+(60, 'Pedro Miguel Amaral Melo da Cruz'),
+(61, 'Pedro Nuno San-Bento Furtado'),
+(62, 'Raul André Brajczewski Barbosa'),
+(63, 'Rui Alexandre Neves Craveirinha'),
+(64, 'Rui Pedro Lourenço Miranda'),
+(65, 'Rui Pedro Pinto Carvalho Paiva'),
+(66, 'Tiago José dos Santos Martins da Cruz'),
+(67, 'Tiago Rodrigues Baptista'),
+(68, 'Vasco Nuno Sousa Simões Pereira');
 
 --
 -- Indexes for dumped tables
@@ -203,6 +284,12 @@ ALTER TABLE `services`
  ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `teachers`
+--
+ALTER TABLE `teachers`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -216,6 +303,11 @@ MODIFY `id` int(12) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=128;
 --
 ALTER TABLE `services`
 MODIFY `id` int(12) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `teachers`
+--
+ALTER TABLE `teachers`
+MODIFY `id` int(12) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=69;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
