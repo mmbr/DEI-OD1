@@ -4,7 +4,7 @@ SQL database for the second Oficina de Design I (Digital Workshop I) project @ F
 
 ## Installation
 
-The od1.sql should preferably be imported into an empty table.
+The od1.sql file should preferably be imported into an empty table.
 
 ## Tables
 
@@ -27,4 +27,4 @@ Students should fork this project and work on top of the original table structur
 * adding office hours for teachers, by creating a table which makes use of the teachers and rooms tables;
 * establishing relations between services and rooms.
 
-All changes considered useful for the entire class will be merged to the main repository.
+All changes considered useful for the entire class will be merged to the main repository. Pull requests should include at least one .sql file, with no database creation or editing instructions.
