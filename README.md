@@ -2,6 +2,10 @@
 
 SQL database for the second Oficina de Design I (Digital Workshop I) project @ FCTUC.
 
+## Installation
+
+The od1.sql should preferably be imported into an empty table.
+
 ## Tables
 
 ### Rooms
@@ -15,3 +19,11 @@ SQL database for the second Oficina de Design I (Digital Workshop I) project @ F
 ### Teachers
 * ID (Auto Incremented INT)
 * Name (e.g. _Alberto Jorge Lebre Cardoso_)
+
+## Contributing
+
+Students should fork this project and work on top of the original table structure, by adding any information that's relevant to the project:
+
+e.g.
+* adding office hours for teachers, by creating a table which makes use of the teachers and rooms tables;
+* establishing relations between services and rooms.
