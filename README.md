@@ -8,15 +8,15 @@ The od1.sql should preferably be imported into an empty table.
 
 ## Tables
 
-### Rooms
+##### Rooms
 * ID (Auto Incremented INT)
 * Room (e.g. _F1.1_)
 
-### Services
+##### Services
 * ID (Auto Incremented INT)
 * Name (e.g. _GAPI — Gabinete de Apoio a Projectos de Investigação_)
 
-### Teachers
+##### Teachers
 * ID (Auto Incremented INT)
 * Name (e.g. _Alberto Jorge Lebre Cardoso_)
 
