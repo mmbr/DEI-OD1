@@ -11,19 +11,19 @@ Create a new database and [import the od1.sql file](http://www.inmotionhosting.c
 ## Tables
 
 ##### Rooms
-* ID (Auto Incremented INT)
-* Room (e.g. _F1.1_)
+* id (Auto Incremented INT)
+* room (e.g. _F1.1_)
 
 ##### Services
-* ID (Auto Incremented INT)
-* Name (VARCHAR — e.g. _GAPI — Gabinete de Apoio a Projectos de Investigação_)
+* id (Auto Incremented INT)
+* name (VARCHAR — e.g. _GAPI — Gabinete de Apoio a Projectos de Investigação_)
 
 ##### Teachers
-* ID (Auto Incremented INT)
-* Name (VARCHAR — e.g. _Alberto Jorge Lebre Cardoso_)
+* id (Auto Incremented INT)
+* name (VARCHAR — e.g. _Alberto Jorge Lebre Cardoso_)
 
 ##### Offices
-* ID (Auto Incremented INT)
+* id (Auto Incremented INT)
 * roomID (INT)
 * teacherID (INT)
 
