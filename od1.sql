@@ -209,7 +209,7 @@ INSERT INTO `teachers` (`id`, `name`) VALUES
 (9, 'António José Nunes Mendes'),
 (10, 'António Manuel Sucena Silveira Gomes'),
 (11, 'Bernardete Martins Ribeiro'),
-(12, 'Bruna Raquel Sousa'),
+(12, 'Bruna Raquel Santos Sousa'),
 (13, 'Bruno Miguel Brás Cabral'),
 (14, 'Carlos Eduardo Delgado Cerqueira'),
 (15, 'Carlos Manuel Mira da Fonseca'),
@@ -235,7 +235,7 @@ INSERT INTO `teachers` (`id`, `name`) VALUES
 (35, 'João Manuel Frade Belo Bicker'),
 (36, 'João Paulo da Silva Machado Garcia Vilela'),
 (37, 'João Pedro Morais de Matos Moniz Ramos'),
-(38, 'João Proença Cunha'),
+(38, 'João Miguel Andrade Proença da Cunha'),
 (39, 'Karen Bennett'),
 (40, 'Licínio Gomes Roque'),
 (41, 'Luís Alexandre Serras Moura e Silva'),
@@ -267,6 +267,82 @@ INSERT INTO `teachers` (`id`, `name`) VALUES
 (67, 'Tiago Rodrigues Baptista'),
 (68, 'Vasco Nuno Sousa Simões Pereira');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for `offices`
+--
+
+CREATE TABLE IF NOT EXISTS `offices` (
+`id` int NOT NULL,
+  `roomID` int NOT NULL,
+  `teacherID` int NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=latin1;
+
+--
+-- Data for the table `offices`
+--
+
+INSERT INTO `offices` (`id`, `roomID`, `teacherID`) VALUES
+(1, 28, 13),
+(2, 30, 61),
+(3, 31, 66),
+(4, 32, 19),
+(5, 34, 31),
+(6, 36, 11),
+(7, 37, 25),
+(8, 38, 27),
+(9, 39, 44),
+(10, 40, 46),
+(11, 41, 45),
+(12, 42, 3),
+(13, 43, 1),
+(14, 44, 32),
+(15, 45, 54),
+(16, 46, 30),
+(17, 47, 15),
+(18, 48, 65),
+(19, 50, 59),
+(20, 52, 56),
+(21, 53, 68),
+(22, 55, 42),
+(23, 56, 57),
+(24, 57, 8),
+(25, 58, 24),
+(26, 59, 18),
+(27, 62, 16),
+(28, 63, 49),
+(29, 64, 26),
+(30, 66, 23),
+(31, 67, 34),
+(32, 68, 6),
+(33, 69, 22),
+(34, 70, 47),
+(35, 72, 36),
+(36, 73, 40),
+(37, 74, 62),
+(38, 75, 67),
+(39, 76, 4),
+(40, 77, 17),
+(41, 78, 64),
+(42, 79, 53),
+(43, 80, 14),
+(44, 80, 58),
+(45, 82, 33),
+(46, 83, 48),
+(47, 84, 20),
+(48, 85, 7),
+(49, 86, 9),
+(50, 107, 5),
+(51, 107, 10),
+(52, 107, 12),
+(53, 107, 21),
+(54, 107, 38),
+(55, 107, 35),
+(56, 107, 51),
+(57, 107, 52),
+(58, 107, 60);
+
 --
 -- Indexes for dumped tables
 --
@@ -290,6 +366,12 @@ ALTER TABLE `teachers`
  ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `offices`
+--
+ALTER TABLE `offices`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -308,6 +390,11 @@ MODIFY `id` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 ALTER TABLE `teachers`
 MODIFY `id` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=69;
+--
+-- AUTO_INCREMENT for table `offices`
+--
+ALTER TABLE `offices`
+MODIFY `id` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=59;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
