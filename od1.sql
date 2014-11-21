@@ -276,11 +276,11 @@ INSERT INTO `teachers` (`id`, `name`) VALUES
 CREATE TABLE IF NOT EXISTS `offices` (
 `id` int NOT NULL,
   `roomID` int NOT NULL,
-    `teacherID` int NOT NULL
+  `teacherID` int NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=latin1;
 
 --
--- Data for the table `gabinetes`
+-- Data for the table `offices`
 --
 
 INSERT INTO `offices` (`id`, `roomID`, `teacherID`) VALUES
@@ -341,7 +341,7 @@ INSERT INTO `offices` (`id`, `roomID`, `teacherID`) VALUES
 (55, 107, 35),
 (56, 107, 51),
 (57, 107, 52),
-(58, 107, 60),
+(58, 107, 60);
 
 --
 -- Indexes for dumped tables
@@ -363,6 +363,12 @@ ALTER TABLE `services`
 -- Indexes for table `teachers`
 --
 ALTER TABLE `teachers`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `offices`
+--
+ALTER TABLE `offices`
  ADD PRIMARY KEY (`id`);
 
 --
