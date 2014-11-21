@@ -31,7 +31,8 @@ Create a new database and [import the od1.sql file](http://www.inmotionhosting.c
 
 Students should fork this project and work on top of the original table structure, by adding any information that's relevant to the project, e.g.
 
-* adding office hours for teachers, by creating a table which makes use of the teachers and rooms tables;
-* establishing relations between services and rooms.
+* ~~adding teacher offices, by creating a table which makes use of the teachers and rooms tables~~
+* adding office hours for teachers
+* establishing relations between services and rooms
 
 All changes considered useful for the entire class will be merged to the main repository. Pull requests should include at least one .sql file, with no database creation or editing instructions.
