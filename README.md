@@ -24,7 +24,6 @@ The od1.sql file should preferably be imported into an empty table.
 * ID (Auto Incremented INT)
 * roomID (INT)
 * teacherID (INT)
-* Name (VARCHAR — e.g. _Alberto Jorge Lebre Cardoso_)
 
 ## Contributing
 
