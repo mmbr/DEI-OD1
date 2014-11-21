@@ -14,11 +14,17 @@ The od1.sql file should preferably be imported into an empty table.
 
 ##### Services
 * ID (Auto Incremented INT)
-* Name (e.g. _GAPI — Gabinete de Apoio a Projectos de Investigação_)
+* Name (VARCHAR — e.g. _GAPI — Gabinete de Apoio a Projectos de Investigação_)
 
 ##### Teachers
 * ID (Auto Incremented INT)
-* Name (e.g. _Alberto Jorge Lebre Cardoso_)
+* Name (VARCHAR — e.g. _Alberto Jorge Lebre Cardoso_)
+
+##### Offices
+* ID (Auto Incremented INT)
+* roomID (INT)
+* teacherID (INT)
+* Name (VARCHAR — e.g. _Alberto Jorge Lebre Cardoso_)
 
 ## Contributing
 
