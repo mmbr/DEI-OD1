@@ -4,7 +4,9 @@ SQL database for the second Oficina de Design I (Digital Workshop I) project @ F
 
 ## Installation
 
-The od1.sql file should preferably be imported into an empty database.
+To build the tables, run __phpMyAdmin__ from a local or remote server, or use the demo version [available from the phpMyAdmin website](http://demo.phpmyadmin.net/master-config/).
+
+Create a new database and [import the od1.sql file](http://www.inmotionhosting.com/support/website/phpmyadmin/import-database-using-phpmyadmin) or [copy and paste its contents](https://www.siteground.com/tutorials/phpmyadmin/phpmyadmin_mysql_query.htm) into the new database.
 
 ## Tables
 
