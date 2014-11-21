@@ -4,7 +4,7 @@ SQL database for the second Oficina de Design I (Digital Workshop I) project @ F
 
 ## Installation
 
-The od1.sql file should preferably be imported into an empty table.
+The od1.sql file should preferably be imported into an empty database.
 
 ## Tables
 
