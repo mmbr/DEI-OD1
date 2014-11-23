@@ -54,14 +54,14 @@ __Columns:__
 
 Students should fork this project and work on top of the original table structure, by adding any information that's relevant to the project, e.g.
 
-* ~~adding teacher offices, by creating a table which makes use of the teachers and rooms tables~~
-* ~~establishing relations between services and rooms~~
-* adding office hours for teachers
-* adding spatial information to rooms (e.g. floor, tower, etc.)
-* adding faculty facilities (e.g. bathrooms)
-* adding typology information to the rooms (e.g. meeting room, classroom, study room, etc.)
-* adding capacity information to rooms
-* flagging private or inacessible rooms
+* [x] adding teacher offices, by creating a table which makes use of the teachers and rooms tables
+* [x] establishing relations between services and rooms
+* [ ] adding office hours for teachers
+* [ ] adding spatial information to rooms (e.g. floor, tower, etc.)
+* [ ] adding faculty facilities (e.g. bathrooms)
+* [ ] adding typology information to the rooms (e.g. meeting room, classroom, study room, etc.)
+* [ ] adding capacity information to rooms
+* [ ] flagging private or inacessible rooms
 
 All changes considered useful for the entire class will be merged to the main repository. Pull requests should include at least one .sql file, with no database creation or editing instructions.
 
