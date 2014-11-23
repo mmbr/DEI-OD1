@@ -2,14 +2,6 @@
 
 SQL database for the second Oficina de Design I (Digital Workshop I) project @ FCTUC.
 
-## Installation
-
-To build the tables, run __phpMyAdmin__ from a local or remote server, or use the demo version [available from the phpMyAdmin website](http://demo.phpmyadmin.net/master-config/).
-
-Create a new database and [import the od1.sql file](http://www.inmotionhosting.com/support/website/phpmyadmin/import-database-using-phpmyadmin) or [copy and paste its contents](https://www.siteground.com/tutorials/phpmyadmin/phpmyadmin_mysql_query.htm) into the new database.
-
-Please check the [wiki](https://github.com/emmnunes/DEI-OD1/wiki) for additional instructions on how to create the tables and example SQL queries.
-
 ## Tables
 
 #### Rooms
@@ -61,3 +53,45 @@ Students should fork this project and work on top of the original table structur
 * flagging private or inacessible rooms
 
 All changes considered useful for the entire class will be merged to the main repository. Pull requests should include at least one .sql file, with no database creation or editing instructions.
+
+## Instructions
+
+### Installation
+
+To build the tables, run __phpMyAdmin__ from a local or remote server, or use the demo version [available from the phpMyAdmin website](http://demo.phpmyadmin.net/master-config/).
+
+Create a new database and [import the od1.sql file](http://www.inmotionhosting.com/support/website/phpmyadmin/import-database-using-phpmyadmin) or [copy and paste its contents](https://www.siteground.com/tutorials/phpmyadmin/phpmyadmin_mysql_query.htm) into the new database.
+
+### Running SQL Queries
+
+You can use the following SQL snippets to quickly query any bit of data form the database.
+
+__Query all teachers__
+
+``` sql
+SELECT * FROM teachers
+```
+__Query rooms starting with E__
+
+``` sql
+SELECT * FROM rooms
+WHERE room LIKE 'E%'
+```
+
+__Query service names and respective rooms__
+
+``` sql
+SELECT services.name, rooms.room
+FROM service_rooms, rooms, services
+WHERE service_rooms.roomID = rooms.id AND service_rooms.serviceID = services.id
+```
+
+__Query teacher offices__
+
+``` sql
+SELECT rooms.room, teachers.name
+FROM offices, rooms, teachers
+WHERE offices.roomID = rooms.id AND offices.teacherID = teachers.id
+```
+
+If you have additional examples you'd like to share, please add them to the [wiki](https://github.com/emmnunes/DEI-OD1/wiki/SQL-Queries).
