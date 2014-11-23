@@ -2,6 +2,10 @@
 
 SQL database for the second Oficina de Design I (Digital Workshop I) project @ FCTUC.
 
+1. [Tables](https://github.com/emmnunes/DEI-OD1#tables)
+2. [Contributing](https://github.com/emmnunes/DEI-OD1#contributing)
+3. [Installation](https://github.com/emmnunes/DEI-OD1#instruction)
+
 ## Tables
 
 #### Rooms
