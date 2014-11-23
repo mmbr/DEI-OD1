@@ -4,7 +4,7 @@ SQL database for the second Oficina de Design I (Digital Workshop I) project @ F
 
 1. [Tables](https://github.com/emmnunes/DEI-OD1#tables)
 2. [Contributing](https://github.com/emmnunes/DEI-OD1#contributing)
-3. [Installation](https://github.com/emmnunes/DEI-OD1#instruction)
+3. [Instructions](https://github.com/emmnunes/DEI-OD1#instructions)
 
 ## Tables
 
