@@ -163,6 +163,7 @@ INSERT INTO `rooms` (`id`, `room`) VALUES
 (130, 'G6.6'),
 (131, 'G6.7');
 
+
 -- --------------------------------------------------------
 
 --
@@ -171,21 +172,21 @@ INSERT INTO `rooms` (`id`, `room`) VALUES
 
 CREATE TABLE IF NOT EXISTS `services` (
 `id` int NOT NULL,
-  `name` varchar(255) NOT NULL,
-    `roomID` int NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+  `name` varchar(255) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 --
 -- Data for the table `services`
 --
 
-INSERT INTO `services` (`id`, `name`, `roomID`) VALUES
-(1, 'GAPI — Gabinete de Apoio a Projectos', 25),
-(2, 'Helpdesk', 129),
-(3, 'Secretaria', 22),
-(4, 'NEI — Núcleo de Estudantes de Informática', 8),
-(5, 'Bar CISUC', 111),
-(6, 'Bar', 1);
+INSERT INTO `services` (`id`, `name`) VALUES
+(1, 'GAPI — Gabinete de Apoio a Projectos'),
+(2, 'Helpdesk'),
+(3, 'Secretaria'),
+(4, 'NEI — Núcleo de Estudantes de Informática'),
+(5, 'Bar CISUC'),
+(6, 'Bar'),
+(7, 'Espaços de Estudo');
 
 -- --------------------------------------------------------
 
@@ -348,6 +349,35 @@ INSERT INTO `offices` (`id`, `roomID`, `teacherID`) VALUES
 (57, 109, 52),
 (58, 109, 60);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for `service_rooms`
+--
+
+CREATE TABLE IF NOT EXISTS `service_rooms` (
+`id` int NOT NULL,
+  `serviceID` int NOT NULL,
+  `roomID` int NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+
+--
+-- Data for the table `service_rooms`
+--
+
+INSERT INTO `service_rooms` (`id`, `serviceID`, `roomID`) VALUES
+(1, 1, 25),
+(2, 2, 129),
+(3, 3, 22),
+(4, 4, 8),
+(5, 5, 111),
+(6, 6, 1),
+(7, 7, 3),
+(8, 7, 6),
+(9, 7, 9),
+(10, 7, 10),
+(11, 7, 11);
+
 --
 -- Indexes for dumped tables
 --
@@ -377,6 +407,12 @@ ALTER TABLE `offices`
  ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `service_rooms`
+--
+ALTER TABLE `service_rooms`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -389,7 +425,7 @@ MODIFY `id` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=132;
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-MODIFY `id` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+MODIFY `id` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `teachers`
 --
@@ -400,6 +436,11 @@ MODIFY `id` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=69;
 --
 ALTER TABLE `offices`
 MODIFY `id` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=59;
+--
+-- AUTO_INCREMENT for table `service_rooms`
+--
+ALTER TABLE `service_rooms`
+MODIFY `id` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
