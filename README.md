@@ -3,8 +3,15 @@
 SQL database for the second Oficina de Design I (Digital Workshop I) project @ FCTUC.
 
 1. [Tables](https://github.com/emmnunes/DEI-OD1#tables)
+  1. [Rooms](https://github.com/emmnunes/DEI-OD1#rooms)
+  2. [Services](https://github.com/emmnunes/DEI-OD1#services)
+  3. [Teachers](https://github.com/emmnunes/DEI-OD1#teachers)
+  4. [Offices](https://github.com/emmnunes/DEI-OD1#offices)
+  5. [Service Rooms](https://github.com/emmnunes/DEI-OD1#service-rooms)
 2. [Contributing](https://github.com/emmnunes/DEI-OD1#contributing)
 3. [Instructions](https://github.com/emmnunes/DEI-OD1#instructions)
+  1. [Installation](https://github.com/emmnunes/DEI-OD1#installation)
+  2. [Running SQL Queries](https://github.com/emmnunes/DEI-OD1#running-sql-queries)
 
 ## Tables
 
