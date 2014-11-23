@@ -8,6 +8,8 @@ To build the tables, run __phpMyAdmin__ from a local or remote server, or use th
 
 Create a new database and [import the od1.sql file](http://www.inmotionhosting.com/support/website/phpmyadmin/import-database-using-phpmyadmin) or [copy and paste its contents](https://www.siteground.com/tutorials/phpmyadmin/phpmyadmin_mysql_query.htm) into the new database.
 
+Please check the [wiki](https://github.com/emmnunes/DEI-OD1/wiki) for additional instructions on how to create the tables and example SQL queries.
+
 ## Tables
 
 #### Rooms
