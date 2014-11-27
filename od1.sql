@@ -184,7 +184,7 @@ CREATE TABLE IF NOT EXISTS `services` (
 --
 
 INSERT INTO `services` (`id`, `name`, `open_time`, `close_time`) VALUES
-(1, 'GAPI — Gabinete de Apoio a Projectos', '09:00', '17:00'),
+(1, 'GAPI — Gabinete de Apoio a Projectos', NULL, NULL),
 (2, 'Helpdesk', '10:00', '13:00'),
 (3, 'Secretaria', '09:00', '17:00'),
 (4, 'NEI — Núcleo de Estudantes de Informática', NULL, NULL),
