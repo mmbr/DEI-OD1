@@ -70,6 +70,8 @@ Students should fork this project and work on top of the original table structur
 
 All changes considered useful for the entire class will be merged to the main repository. Pull requests should include at least one .sql file, with no database creation or editing instructions.
 
+**Note:** You may want to check the latest phone listing of the department [here](http://www.uc.pt/fctuc/dei/contactos/listaTelefones).
+
 ## Instructions
 
 ### Installation
