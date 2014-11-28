@@ -18,7 +18,9 @@ SQL database for the second Oficina de Design I (Digital Workshop I) project @ F
 #### Rooms
 _Lists all rooms in the building, by their official designation (E4.1)_
 * id (Auto Incremented INT)
-* room (e.g. _F1.1_)
+* room (VARCHAR — e.g. _F1.1_)
+* floor (INT — e.g. _1_)
+* tower (VARCHAR — e.g. _F_)
 
 #### Services
 _Lists relevant University services located in the building_
@@ -26,6 +28,8 @@ _Lists relevant University services located in the building_
 __Columns:__
 * id (Auto Incremented INT)
 * name (VARCHAR — e.g. _GAPI — Gabinete de Apoio a Projectos de Investigação_)
+* open\_time (TIME — e.g. _09:00:00_)
+* close\_time (TIME — e.g. _17:00:00_)
 
 #### Teachers
 _Lists all of the department teachers_
@@ -57,11 +61,12 @@ Students should fork this project and work on top of the original table structur
 * [x] adding teacher offices, by creating a table which makes use of the teachers and rooms tables
 * [x] establishing relations between services and rooms
 * [ ] adding office hours for teachers
-* [ ] adding spatial information to rooms (e.g. floor, tower, etc.)
+* [x] adding spatial information to rooms (e.g. floor, tower, etc.)
 * [ ] adding faculty facilities (e.g. bathrooms)
 * [ ] adding typology information to the rooms (e.g. meeting room, classroom, study room, etc.)
 * [ ] adding capacity information to rooms
 * [ ] flagging private or inacessible rooms
+* [ ] translating all tables to English
 
 All changes considered useful for the entire class will be merged to the main repository. Pull requests should include at least one .sql file, with no database creation or editing instructions.
 
