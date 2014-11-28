@@ -66,7 +66,7 @@ Students should fork this project and work on top of the original table structur
 * [ ] adding typology information to the rooms (e.g. meeting room, classroom, study room, etc.)
 * [ ] adding capacity information to rooms
 * [ ] flagging private or inacessible rooms
-* [ ] translating all tables to English
+* [ ] [translating all tables to English](https://github.com/emmnunes/DEI-OD1/issues/7)
 
 All changes considered useful for the entire class will be merged to the main repository. Pull requests should include at least one .sql file, with no database creation or editing instructions.
 
