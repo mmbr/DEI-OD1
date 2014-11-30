@@ -25,172 +25,153 @@ CREATE TABLE IF NOT EXISTS `rooms` (
 `id` int NOT NULL,
   `room` varchar(255) NOT NULL,
     `floor` int NOT NULL,
-    `tower` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=132 DEFAULT CHARSET=latin1;
+    `tower` varchar(255) NOT NULL,
+    `typology` varchar(255) NOT NULL,
+    `name` varchar(255) NULL
+
+) ENGINE=InnoDB AUTO_INCREMENT=137 DEFAULT CHARSET=latin1;
 
 --
 -- Data for the table `rooms`
 --
 
-INSERT INTO `rooms` (`id`, `room`, `floor`, `tower`) VALUES
-(1, 'A4.3', 4, 'A'),
-(2, 'A5.4', 5, 'A'),
-(3, 'A6.1', 6, 'A'),
-(4, 'B1', 4, 'B'),
-(5, 'B2', 5, 'B'),
-(6, 'C4.1', 4, 'C'),
-(7, 'C4.2', 4, 'C'),
-(8, 'C4.3', 4, 'C'),
-(9, 'C4.4', 4, 'C'),
-(10, 'C4.5', 4, 'C'),
-(11, 'C4.6', 4, 'C'),
-(12, 'C5.1', 5, 'C'),
-(13, 'C5.2', 5, 'C'),
-(14, 'C5.3', 5, 'C'),
-(15, 'C5.4', 5, 'C'),
-(16, 'C6.1', 6, 'C'),
-(17, 'C6.2', 6, 'C'),
-(18, 'C6.3', 6, 'C'),
-(19, 'C6.4', 6, 'C'),
-(20, 'C6.5', 6, 'C'),
-(21, 'C6.6', 6, 'C'),
-(22, 'D1.1', 1, 'D'),
-(23, 'D1.2', 1, 'D'),
-(24, 'D1.3', 1, 'D'),
-(25, 'D1.4', 1, 'D'),
-(26, 'D1.5', 1, 'D'),
-(27, 'D1.6', 1, 'D'),
-(28, 'D1.7', 1, 'D'),
-(29, 'D1.8', 1, 'D'),
-(30, 'D1.9', 1, 'D'),
-(31, 'D1.10', 1, 'D'),
-(32, 'D1.11', 1, 'D'),
-(33, 'D1.12', 1, 'D'),
-(34, 'D1.13', 1, 'D'),
-(35, 'D1.14', 1, 'D'),
-(36, 'D1.15', 1, 'D'),
-(37, 'D1.17', 1, 'D'),
-(38, 'D1.18', 1, 'D'),
-(39, 'D1.19', 1, 'D'),
-(40, 'D2.1', 2, 'D'),
-(41, 'D2.2', 2, 'D'),
-(42, 'D2.3', 2, 'D'),
-(43, 'D2.4', 2, 'D'),
-(44, 'D2.5', 2, 'D'),
-(45, 'D2.6', 2, 'D'),
-(46, 'D2.7', 2, 'D'),
-(47, 'D2.8', 2, 'D'),
-(48, 'D2.9', 2, 'D'),
-(49, 'D2.10', 2, 'D'),
-(50, 'D2.11', 2, 'D'),
-(51, 'D2.12', 2, 'D'),
-(52, 'D2.13', 2, 'D'),
-(53, 'D2.14', 2, 'D'),
-(54, 'D2.15', 2, 'D'),
-(55, 'D2.16', 2, 'D'),
-(56, 'D2.17', 2, 'D'),
-(57, 'D2.18', 2, 'D'),
-(58, 'D2.19', 2, 'D'),
-(59, 'D2.20', 2, 'D'),
-(60, 'D2.21', 2, 'D'),
-(61, 'D2.22', 2, 'D'),
-(62, 'D2.23', 2, 'D'),
-(63, 'D2.24', 2, 'D'),
-(64, 'D2.25', 2, 'D'),
-(65, 'D2.26', 2, 'D'),
-(66, 'D3.1', 3, 'D'),
-(67, 'D3.2', 3, 'D'),
-(68, 'D3.3', 3, 'D'),
-(69, 'D3.4', 3, 'D'),
-(70, 'D3.5', 3, 'D'),
-(71, 'D3.6', 3, 'D'),
-(72, 'D3.7', 3, 'D'),
-(73, 'D3.8', 3, 'D'),
-(74, 'D3.9', 3, 'D'),
-(75, 'D3.10', 3, 'D'),
-(76, 'D3.11', 3, 'D'),
-(77, 'D3.12', 3, 'D'),
-(78, 'D3.13', 3, 'D'),
-(79, 'D3.14', 3, 'D'),
-(80, 'D3.15', 3, 'D'),
-(81, 'D3.16', 3, 'D'),
-(82, 'D3.17', 3, 'D'),
-(83, 'D3.18', 3, 'D'),
-(84, 'D3.19', 3, 'D'),
-(85, 'D3.20', 3, 'D'),
-(86, 'D3.21', 3, 'D'),
-(87, 'D3.22', 3, 'D'),
-(88, 'D3.23', 3, 'D'),
-(89, 'E4.1', 4, 'E'),
-(90, 'E4.2', 4, 'E'),
-(91, 'E4.3', 4, 'E'),
-(92, 'E4.4', 4, 'E'),
-(93, 'E4.5', 4, 'E'),
-(94, 'E4.6', 4, 'E'),
-(95, 'E4.7', 4, 'E'),
-(96, 'E5.1', 5, 'E'),
-(97, 'E5.2', 5, 'E'),
-(98, 'E5.3', 5, 'E'),
-(99, 'E5.4', 5, 'E'),
-(100, 'E5.5', 5, 'E'),
-(101, 'E5.6', 5, 'E'),
-(102, 'E5.7', 5, 'E'),
-(103, 'E5.8', 5, 'E'),
-(104, 'E6.1', 6, 'E'),
-(105, 'E6.2', 6, 'E'),
-(106, 'E6.3', 6, 'E'),
-(107, 'E6.4', 6, 'E'),
-(108, 'E6.5', 6, 'E'),
-(109, 'F1.1', 1, 'F'),
-(110, 'F1.2', 1, 'F'),
-(111, 'F1.4', 1, 'F'),
-(112, 'F2.1', 2, 'F'),
-(113, 'F2.2', 2, 'F'),
-(114, 'F2.3', 2, 'F'),
-(115, 'G4.1', 4, 'G'),
-(116, 'G4.2', 4, 'G'),
-(117, 'G4.3', 4, 'G'),
-(118, 'G4.5', 4, 'G'),
-(119, 'G4.6', 4, 'G'),
-(120, 'G5.1', 5, 'G'),
-(121, 'G5.2', 5, 'G'),
-(122, 'G5.3', 5, 'G'),
-(123, 'G5.4.1', 5, 'G'),
-(124, 'G5.4.2', 5, 'G'),
-(125, 'G5.5', 5, 'G'),
-(126, 'G5.6', 5, 'G'),
-(127, 'G6.1', 6, 'G'),
-(128, 'G6.2', 6, 'G'),
-(129, 'G6.4', 6, 'G'),
-(130, 'G6.6', 6, 'G'),
-(131, 'G6.7', 6, 'G');
-
-
--- --------------------------------------------------------
-
---
--- Table structure for `services`
---
-
-CREATE TABLE IF NOT EXISTS `services` (
-`id` int NOT NULL,
-  `name` varchar(255) NOT NULL,
-    `open_time` TIME NULL,
-    `close_time` TIME NULL
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
-
---
--- Data for the table `services`
---
-
-INSERT INTO `services` (`id`, `name`, `open_time`, `close_time`) VALUES
-(1, 'GAPI — Gabinete de Apoio a Projectos', NULL, NULL),
-(2, 'Helpdesk', '10:00', '13:00'),
-(3, 'Secretaria', '09:00', '17:00'),
-(4, 'NEI — Núcleo de Estudantes de Informática', NULL, NULL),
-(5, 'Bar CISUC', NULL, NULL),
-(6, 'Bar', '09:00', '18:00'),
-(7, 'Espaços de Estudo', NULL, NULL);
+INSERT INTO `rooms` (`id`, `room`, `floor`, `tower`, `typology`, `name`) VALUES
+(1, 'A4.3', 4, 'A', 'services', 'bar'),
+(2, 'A5.4', 5, 'A', 'study room', 'Sala de Estudo'),
+(3, 'A6.1', 6, 'A', 'study room', 'Sala de Estudo'),
+(4, 'B1', 4, 'B', 'classroom', 'Anfiteatro B1'),
+(5, 'B2', 5, 'B', 'classroom', 'Anfiteatro B2'),
+(6, 'C4.1', 4, 'C', 'study room', 'Sala de Estudo'),
+(7, 'C4.2', 4, 'C', 'meeting room', 'Sala de Convívio'),
+(8, 'C4.3', 4, 'C', 'services', 'NEI — Núcleo de Estudantes de Informática'),
+(9, 'C4.4', 4, 'C', 'study room', 'Sala de Estudo'),
+(10, 'C4.5', 4, 'C', 'study room', 'Sala de Estudo'),
+(11, 'C4.6', 4, 'C', 'study room', 'Sala de Estudo'),
+(12, 'C5.1', 5, 'C', 'classroom', NULL),
+(13, 'C5.2', 5, 'C', 'classroom', NULL),
+(14, 'C5.3', 5, 'C', 'classroom', NULL),
+(15, 'C5.4', 5, 'C', 'classroom', NULL),
+(16, 'C6.1', 6, 'C', 'laboratory', 'CISUC-CRS'),
+(17, 'C6.2', 6, 'C', 'laboratory', 'CISUC-SSE'),
+(18, 'C6.3', 6, 'C', 'laboratory', 'CISUC-IS'),
+(19, 'C6.4', 6, 'C', 'laboratory', 'Lab. de Sistemas Multimédia'),
+(20, 'C6.5', 6, 'C', 'laboratory', 'CISUC-CRS'),
+(21, 'C6.6', 6, 'C', 'laboratory', 'CISUC-AC'),
+(22, 'D1.1', 1, 'D', 'services', 'Secretaria'),
+(23, 'D1.2', 1, 'D', NULL, NULL),
+(24, 'D1.3', 1, 'D', 'services', 'Reprografia'),
+(25, 'D1.4', 1, 'D', 'services', 'GAPI — Gabinete de Apoio a Projectos'),
+(26, 'D1.5', 1, 'D', 'staff', 'Sala de Reuniões'),
+(27, 'D1.6', 1, 'D', 'staff', 'Sala de Vídeoconferência'),
+(28, 'D1.7', 1, 'D', 'staff', 'Sala de Vídeoconferência'),
+(29, 'D1.8', 1, 'D', 'offices', NULL),
+(30, 'D1.9', 1, 'D', 'offices', NULL),
+(31, 'D1.10', 1, 'D', 'staff', 'Sala de Funcionários'),
+(32, 'D1.11', 1, 'D', 'offices', NULL),
+(33, 'D1.12', 1, 'D', 'offices', NULL),
+(34, 'D1.13', 1, 'D', 'offices', NULL),
+(35, 'D1.14', 1, 'D', 'laboratory', 'CISUC Investigadores Externos'),
+(36, 'D1.15', 1, 'D', 'offices', NULL),
+(37, 'D1.17', 1, 'D', 'laboratory', 'Phd Lounge'),
+(38, 'D1.18', 1, 'D', 'offices', NULL),
+(39, 'D1.19', 1, 'D', 'offices', NULL),
+(40, 'D2.1', 2, 'D', 'offices', NULL),
+(41, 'D2.2', 2, 'D', 'offices', NULL),
+(42, 'D2.3', 2, 'D', 'offices', NULL),
+(43, 'D2.4', 2, 'D', 'offices', NULL),
+(44, 'D2.5', 2, 'D', 'offices', NULL),
+(45, 'D2.6', 2, 'D', 'offices', NULL),
+(46, 'D2.7', 2, 'D', 'offices', NULL),
+(47, 'D2.8', 2, 'D', 'offices', NULL),
+(48, 'D2.9', 2, 'D', 'offices', NULL),
+(49, 'D2.10', 2, 'D', 'offices', NULL),
+(50, 'D2.11', 2, 'D', 'offices', NULL),
+(51, 'D2.12', 2, 'D', 'offices', NULL),
+(52, 'D2.13', 2, 'D', 'offices', NULL),
+(53, 'D2.14', 2, 'D', 'offices', NULL),
+(54, 'D2.15', 2, 'D', 'offices', NULL),
+(55, 'D2.16', 2, 'D', 'offices', NULL),
+(56, 'D2.17', 2, 'D', 'offices', NULL),
+(57, 'D2.18', 2, 'D', 'offices', NULL),
+(58, 'D2.19', 2, 'D', 'offices', NULL),
+(59, 'D2.20', 2, 'D', 'offices', NULL),
+(60, 'D2.21', 2, 'D', 'offices', NULL),
+(61, 'D2.22', 2, 'D', 'offices', NULL),
+(62, 'D2.23', 2, 'D', 'offices', NULL),
+(63, 'D2.24', 2, 'D', 'offices', NULL),
+(64, 'D2.25', 2, 'D', 'offices', NULL),
+(65, 'D2.26', 2, 'D', 'offices', NULL),
+(66, 'D3.1', 3, 'D', 'offices', NULL),
+(67, 'D3.2', 3, 'D', 'offices', NULL),
+(68, 'D3.3', 3, 'D', 'offices', NULL),
+(69, 'D3.4', 3, 'D', 'offices', NULL),
+(70, 'D3.5', 3, 'D', 'offices', NULL),
+(71, 'D3.6', 3, 'D', 'offices', NULL),
+(72, 'D3.7', 3, 'D', 'offices', NULL),
+(73, 'D3.8', 3, 'D', 'offices', NULL),
+(74, 'D3.9', 3, 'D', 'offices', NULL),
+(75, 'D3.10', 3, 'D', 'offices', NULL),
+(76, 'D3.11', 3, 'D', 'offices', NULL),
+(77, 'D3.12', 3, 'D', 'offices', NULL),
+(78, 'D3.13', 3, 'D', 'offices', NULL),
+(79, 'D3.14', 3, 'D', 'offices', NULL),
+(80, 'D3.15', 3, 'D', 'offices', NULL),
+(81, 'D3.16', 3, 'D', 'offices', NULL),
+(82, 'D3.17', 3, 'D', 'offices', NULL),
+(83, 'D3.18', 3, 'D', 'offices', NULL),
+(84, 'D3.19', 3, 'D', 'offices', NULL),
+(85, 'D3.20', 3, 'D', 'offices', NULL),
+(86, 'D3.21', 3, 'D', 'offices', NULL),
+(87, 'D3.22', 3, 'D', 'offices', NULL),
+(88, 'D3.23', 3, 'D', 'offices', NULL),
+(89, 'E4.1', 4, 'E', 'classroom', NULL),
+(90, 'E4.2', 4, 'E', 'classroom', NULL),
+(91, 'E4.3', 4, 'E', 'classroom', NULL),
+(92, 'E4.4', 4, 'E', 'classroom', NULL),
+(93, 'E4.5', 4, 'E', 'classroom', NULL),
+(94, 'E4.6', 4, 'E', 'classroom', NULL),
+(95, 'E4.7', 4, 'E', 'classroom', NULL),
+(96, 'E5.1', 5, 'E', 'laboratory', 'CISUC-ECOS'),
+(97, 'E5.2', 5, 'E', 'laboratory', 'CISUC-SSE'),
+(98, 'E5.3', 5, 'E', 'laboratory', 'CISUC-SSE'),
+(99, 'E5.4', 5, 'E', 'laboratory', 'CISUC-LCT'),
+(100, 'E5.5', 5, 'E', 'services', 'Sala Serviços CISUC'),
+(101, 'E5.6', 5, 'E', 'laboratory', 'CISUC-SSE'),
+(102, 'E5.7', 5, 'E', 'laboratory', 'CISUC-SSE'),
+(103, 'E5.8', 5, 'E', 'laboratory', 'CISUC-ECOS'),
+(104, 'E6.1', 6, 'E', 'classroom', NULL),
+(105, 'E6.2', 6, 'E', 'laboratory', 'CISUC-AC'),
+(106, 'E6.3', 6, 'E', 'laboratory', 'CISUC-AC'),
+(107, 'E6.4', 6, 'E', 'laboratory', 'CISUC-AC'),
+(108, 'E6.5', 6, 'E', 'laboratory', 'CISUC-CRS'),
+(109, 'F1.1', 1, 'F', 'offices', 'Sala de Professores'),
+(110, 'F1.2', 1, 'F', NULL, NULL),
+(111, 'F1.4', 1, 'F', 'staff', 'Bar CISUC'),
+(112, 'F2.1', 2, 'F', 'offices', 'Sala de Professores Convidados'),
+(113, 'F2.2', 2, 'F',  'laboratory', 'TOEFL'),
+(114, 'F2.3', 2, 'F', 'laboratory', 'MSE - Sala 2'),
+(115, 'G4.1', 4, 'G', 'classroom', NULL),
+(116, 'G4.2', 4, 'G', 'laboratory', 'Lab. de Informática Industrial e Sistemas'),
+(117, 'G4.3', 4, 'G', 'classroom', NULL),
+(118, 'G4.4', 4, 'G', 'laboratory', 'LAGE - Lab. de Gestão'),
+(119, 'G4.5', 4, 'G', 'classroom', NULL),
+(120, 'G4.6', 4, 'G', 'classroom', NULL),
+(121, 'G5.1', 5, 'G', 'laboratory', 'Lab. de Comunicações e Telemática'),
+(122, 'G5.2', 5, 'G', 'classroom', NULL),
+(123, 'G5.3', 5, 'G', 'classroom', NULL),
+(124, 'G5.4.1', 5, 'G', NULL, NULL),
+(125, 'G5.4.2', 5, 'G', NULL, NULL),
+(126, 'G5.5', 5, 'G', 'classroom', NULL),
+(127, 'G5.6', 5, 'G', 'classroom', NULL),
+(128, 'G5.7', 5, 'G', 'classroom', NULL),
+(129, 'G5.8', 5, 'G', 'classroom', NULL),
+(130, 'G6.1', 6, 'G', 'laboratory', 'CISUC-LCT'),
+(131, 'G6.2', 6, 'G', 'laboratory', 'CISUC-LCT'),
+(132, 'G6.3', 6, 'G', 'staff', 'Gestores de Redes'),
+(133, 'G6.4', 6, 'G', 'services', 'Helpdesk'),
+(134, 'G6.5', 6, 'G', 'staff', 'Sala de Servidores'),
+(135, 'G6.6', 6, 'G', 'laboratory', 'CISUC-LCT'),
+(136, 'G6.7', 6, 'G', 'laboratory', 'CISUC-LCT');
 
 -- --------------------------------------------------------
 
@@ -356,31 +337,24 @@ INSERT INTO `offices` (`id`, `roomID`, `teacherID`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for `service_rooms`
+-- Table structure for `service_hours`
 --
 
-CREATE TABLE IF NOT EXISTS `service_rooms` (
+CREATE TABLE IF NOT EXISTS `service_hours` (
 `id` int NOT NULL,
-  `serviceID` int NOT NULL,
-  `roomID` int NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+  `roomID` int NOT NULL,
+  `open_time` TIME NOT NULL,
+    `close_time` TIME NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
--- Data for the table `service_rooms`
+-- Data for the table `service_hours`
 --
 
-INSERT INTO `service_rooms` (`id`, `serviceID`, `roomID`) VALUES
-(1, 1, 25),
-(2, 2, 129),
-(3, 3, 22),
-(4, 4, 8),
-(5, 5, 111),
-(6, 6, 1),
-(7, 7, 3),
-(8, 7, 6),
-(9, 7, 9),
-(10, 7, 10),
-(11, 7, 11);
+INSERT INTO `service_hours` (`id`, `roomID`, `open_time`, `close_time`) VALUES
+(1, 133, '10:00', '13:00'),
+(2, 22, '09:00', '17:00'),
+(3, 1, '09:00', '18:00');
 
 --
 -- Indexes for dumped tables
@@ -390,12 +364,6 @@ INSERT INTO `service_rooms` (`id`, `serviceID`, `roomID`) VALUES
 -- Indexes for table `rooms`
 --
 ALTER TABLE `rooms`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `services`
---
-ALTER TABLE `services`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -413,7 +381,7 @@ ALTER TABLE `offices`
 --
 -- Indexes for table `service_rooms`
 --
-ALTER TABLE `service_rooms`
+ALTER TABLE `service_hours`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -424,12 +392,8 @@ ALTER TABLE `service_rooms`
 -- AUTO_INCREMENT for table `rooms`
 --
 ALTER TABLE `rooms`
-MODIFY `id` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=132;
---
--- AUTO_INCREMENT for table `services`
---
-ALTER TABLE `services`
-MODIFY `id` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+MODIFY `id` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=137;
+
 --
 -- AUTO_INCREMENT for table `teachers`
 --
@@ -443,8 +407,8 @@ MODIFY `id` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=59;
 --
 -- AUTO_INCREMENT for table `service_rooms`
 --
-ALTER TABLE `service_rooms`
-MODIFY `id` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+ALTER TABLE `service_hours`
+MODIFY `id` int NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
