@@ -21,15 +21,8 @@ _Lists all rooms in the building, by their official designation (E4.1)_
 * room (VARCHAR — e.g. _F1.1_)
 * floor (INT — e.g. _1_)
 * tower (VARCHAR — e.g. _F_)
-
-#### Services
-_Lists relevant University services located in the building_
-
-__Columns:__
-* id (Auto Incremented INT)
-* name (VARCHAR — e.g. _GAPI — Gabinete de Apoio a Projectos de Investigação_)
-* open\_time (TIME — e.g. _09:00:00_)
-* close\_time (TIME — e.g. _17:00:00_)
+* typology (VARCHAR — e.g. _services_)
+* name (VARCHAR — e.g. _Bar_)
 
 #### Teachers
 _Lists all of the department teachers_
@@ -46,14 +39,6 @@ __Columns:__
 * roomID (INT)
 * teacherID (INT)
 
-#### Service Rooms
-_Defines rooms for services, by establishing relations between the rooms and services tables_
-
-__Columns:__
-* id (Auto Incremented INT)
-* serviceID (INT)
-* roomID (INT)
-
 ## Contributing
 
 Students should fork this project and work on top of the original table structure, by adding any information that's relevant to the project, e.g.
@@ -63,7 +48,7 @@ Students should fork this project and work on top of the original table structur
 * [ ] adding office hours for teachers
 * [x] adding spatial information to rooms (e.g. floor, tower, etc.)
 * [ ] adding faculty facilities (e.g. bathrooms)
-* [ ] adding typology information to the rooms (e.g. meeting room, classroom, study room, etc.)
+* [x] adding typology information to the rooms (e.g. meeting room, classroom, study room, etc.)
 * [ ] adding capacity information to rooms
 * [ ] flagging private or inacessible rooms
 * [ ] [translating all tables to English](https://github.com/emmnunes/DEI-OD1/issues/7)
