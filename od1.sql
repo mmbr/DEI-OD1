@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `rooms` (
 --
 
 INSERT INTO `rooms` (`id`, `room`, `floor`, `tower`, `typology`, `name`) VALUES
-(1, 'A4.3', 4, 'A', 'services', 'bar'),
+(1, 'A4.3', 4, 'A', 'services', 'Bar'),
 (2, 'A5.4', 5, 'A', 'study room', 'Sala de Estudo'),
 (3, 'A6.1', 6, 'A', 'study room', 'Sala de Estudo'),
 (4, 'B1', 4, 'B', 'classroom', 'Anfiteatro B1'),
@@ -72,7 +72,7 @@ INSERT INTO `rooms` (`id`, `room`, `floor`, `tower`, `typology`, `name`) VALUES
 (34, 'D1.13', 1, 'D', 'offices', NULL),
 (35, 'D1.14', 1, 'D', 'laboratory', 'CISUC Investigadores Externos'),
 (36, 'D1.15', 1, 'D', 'offices', NULL),
-(37, 'D1.17', 1, 'D', 'laboratory', 'Phd Lounge'),
+(37, 'D1.17', 1, 'D', 'laboratory', 'PhD Lounge'),
 (38, 'D1.18', 1, 'D', 'offices', NULL),
 (39, 'D1.19', 1, 'D', 'offices', NULL),
 (40, 'D2.1', 2, 'D', 'offices', NULL),

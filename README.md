@@ -39,6 +39,15 @@ __Columns:__
 * roomID (INT)
 * teacherID (INT)
 
+#### Service Hours
+_Defines opening and closing times for services_
+
+__Columns:__
+* id (Auto Incremented INT)
+* roomID (INT)
+* open\_time (TIME)
+* close\_time (TIME)
+
 ## Contributing
 
 Students should fork this project and work on top of the original table structure, by adding any information that's relevant to the project, e.g.
