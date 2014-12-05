@@ -206,7 +206,7 @@ INSERT INTO `teachers` (`id`, `name`) VALUES
 (15, 'Carlos Manuel Mira da Fonseca'),
 (16, 'Carlos Manuel Robalo Lisboa Bento'),
 (17, 'Carlos Nuno Bizarro e Silva Laranjeiro'),
-(18, 'César A. Teixeira'),
+(18, 'César Alexandre Domingues Teixeira'),
 (19, 'David Fonseca Palma'),
 (20, 'Edmundo Heitor Silva Monteiro'),
 (21, 'Eduardo Miguel Morgado Nunes'),
